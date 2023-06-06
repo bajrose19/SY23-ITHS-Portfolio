@@ -1,0 +1,91 @@
+h1, h2, p{
+    text-align: center;
+    color:#734F96;
+}
+
+body{
+    background-image:url(https://images.unsplash.com/photo-1543157145-f78c636d023d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zmxvd2VycyUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: georgia;
+}
+
+.cover-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+    animation: extra 2s forwards;
+}
+
+@keyframes extra{
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.shop-img{
+    margin-left:auto;
+    margin-right:auto;
+    width: 200px;
+    height: 200px;
+    display:block;
+}
+
+.shop-img:hover{
+    filter:grayscale(50%);
+    animation: size 1s forwards;
+}
+
+@keyframes size{
+    from {
+        height:200px;
+        width:200px;
+    }
+    
+    to {
+        height:300px;
+        width:300px;
+    }
+}
+
+img{
+    border:3px solid black;
+}
+
+p{
+    font-size:20px;
+    margin: 10px;
+    padding: 15px 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #967bb6;
+    text-align: center;
+}
+
+li {
+    display:inline-block;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #734F96;
+}
